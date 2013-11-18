@@ -41,7 +41,7 @@ fs.readFile(file,'utf8',function(err,data){
 })
 
 
-twi.stream('statuses/filter',{track:'ligne5,ligne6,ligne4,ligne1,ligne2,chatelet,invalides,odeon,saint michel,montparnasse,raspail,parmentier,gnd'},function(stream){
+twi.stream('statuses/filter',{track:'montparnasse'},function(stream){
 	
 	console.log("Now listening to twitter ...");
 	stream.on('data',function(data){
